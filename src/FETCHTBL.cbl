@@ -46,7 +46,7 @@
       *      EXEC SQL WHENEVER SQLERROR PERFORM ERROR-RTN END-EXEC.
            
       *    CONNECT
-           MOVE  "testdb@db"       TO   DBNAME.
+           MOVE  "testdb"       TO   DBNAME.
            MOVE  "postgres"        TO   USERNAME.
            MOVE  SPACE             TO   PASSWD.
            EXEC SQL

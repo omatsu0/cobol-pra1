@@ -27,7 +27,15 @@ services:
 
         db:
                 image: postgres:9.6
-
+                volumes:
+                        - psgl_data:/var/lib/postgresql/data
+                environment:
+                        POSTGRES_USER: root
+                        POSTGRES_PASSWORD: password
+                ports:
+                        - 5433:5432
+volumes:
+        psgl_data:
 networks:
         default:
                 
